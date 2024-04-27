@@ -1,0 +1,11 @@
+version: '3'
+services:
+  node-app:
+    container_name: compose-cont-prod
+    build: 
+      context: .
+      target: production
+    environment:
+      - NODE_ENV=production
+    command: npm start
+    
