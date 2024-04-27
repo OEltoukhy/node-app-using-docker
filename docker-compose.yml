@@ -5,6 +5,7 @@ services:
       - "3000:3000"
     env_file:
       - ./.env
+    image: oeltoukhy/node-docker-app
   mongo:
       image: mongo
       restart: always

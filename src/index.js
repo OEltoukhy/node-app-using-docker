@@ -15,7 +15,7 @@ const URI = `mongodb://${DB_USER}:${DB_PASSWORD}@${HOST}:27017` ;
 mongoose.connect(URI).then(()=>console.log("Connected to MongoDB")).catch((err)=> console.error(err));
 
 
-app.get('/', (req, res) => res.send("<h1> Hello Omar</h1>"));
+app.get('/', (req, res) => res.send("<h1> Hello Omar Eltoukhy</h1>"));
 app.listen(PORT, () => {
     console.log(`App is up and running on port: ${PORT}`);
 });
